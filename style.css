@@ -46,6 +46,7 @@
     color: #6C63FF;
   }
 
+    /* Education */
   .education {
     padding: 50px 20px;
     background: #f9f9ff;
@@ -57,10 +58,9 @@
     color: #6a5acd;
   }
   
-  /* Education */
   .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px 0;
   }
@@ -70,7 +70,7 @@
     position: absolute;
     width: 3px;
     background-color: #6a5acd;
-    top: 0;
+    top: 140px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -78,7 +78,6 @@
   
   .timeline-item {
     display: flex;
-    align-items: center;   /* DOT akan selalu sejajar tengah konten */
     justify-content: flex-end;
     position: relative;
     margin: 40px 0;
@@ -90,13 +89,6 @@
     justify-content: flex-start;
   }
   
-  .timeline-dot {
-    width: 18px;
-    height: 18px;
-    background: #6a5acd;
-    border-radius: 50%;
-    z-index: 1;
-  }
   
   .timeline-content {
     background: white;
@@ -120,6 +112,12 @@
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+
+  .experience-card h2 {
+    text-align: center;
+    color: rgb(51, 51, 51);
   }
 
   .experience-card:hover {
@@ -140,6 +138,7 @@
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    text-align: left;
   }
 
   .skill-card:hover {

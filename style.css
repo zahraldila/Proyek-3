@@ -133,12 +133,6 @@ section:not(.hero) {
   transition: background 0.3s ease;
 }
 
-section:not(.about) {
-  padding: 60px 20px;
-  background: #fff;
-  transition: background 0.3s ease;
-}
-
 section:not(.hero):nth-of-type(even) {
   background: linear-gradient(to bottom, #ff658423, #ffffff);
 }

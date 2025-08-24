@@ -8,6 +8,28 @@
 </head>
 <body>
 
+  <nav class="navbar">
+    <div class="logo">Portofolio</div>
+  
+    <!-- Tombol Burger -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#education">Pendidikan</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#skills">Keterampilan</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#certificate">Sertifikasi</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+  
+
+
   <!-- Hero -->
   <section class="hero">
     <img src="assets/img/profile.jpg" alt="Foto Zahra" class="profile-img">
@@ -17,66 +39,66 @@
 
   <!-- About -->
   <div class="about">
-    <section>
+    <section class=about-card id="about">
         <h2>Tentang Saya</h2>
-            <p>Mahasiswa jurusan Teknik Informatika yang
-                aktif dan mudah beradaptasi, dengan
-                pengalaman magang di bandara dan aktif
-                berorganisasi di bidang komunikasi dan
-                pengembangan kegiatan. Terbiasa bekerja
-                dalam tim, komunikatif, dan antusias
-                berkontribusi menciptakan pengalaman
-                terbaik bagi mahasiswa baru.
+            <p>Saya adalah mahasiswa Teknik Informatika yang aktif, komunikatif, dan mudah beradaptasi. Berpengalaman dalam organisasi di bidang komunikasi dan pengembangan kegiatan, saya terbiasa bekerja sama dalam tim, mengelola program, serta berinteraksi dengan berbagai orang. Dengan semangat belajar dan kontribusi positif, saya siap berkembang di bidang akademik maupun profesional.
             </p>
-      </section>
+    </section>
   </div>
 
 <!-- Education -->
 <div class="timeline">
-    <section>
+  <section id="education">
     <h2>Riwayat Pendidikan</h2>
+    <p class="section-intro">
+      Berikut adalah perjalanan pendidikan saya yang membentuk dasar keahlian saya di bidang teknologi
+    </p>
     <div class="timeline-item right">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <img src="/assets/img/polban.png" alt="Polban Logo" class="edu-logo">
+        <div class="edu-text">
           <h3>Politeknik Negeri Bandung</h3>
-          <h3>Teknik Informatika</h3>
+          <h5>Teknik Informatika</h5>
           <p>2024 - sekarang</p>
         </div>
       </div>
+    </div>    
 
-      <div class="timeline-item left">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
+    <div class="timeline-item left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <img src="/assets/img/smk.png" alt="SMKN 1 Cimahi Logo" class="edu-logo">
+        <div class="edu-text">
           <h3>SMKN 1 Cimahi</h3>
-          <h3>Sistem Informatika, Jaringan, dan Aplikasi</h5>
+          <h5>Sistem Informatika, Jaringan, dan Aplikasi</h5>
           <p>2020 - 2024</p>
         </div>
       </div>
-  
-        <div class="timeline-item right">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>MtsN 1 Kota Cimahi</h3>
-            <p>2017 - 2020</p>
+    </div>
+    
+    <div class="timeline-item right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <img src="/assets/img/mts.png" alt="MtsN 1 Kota Cimahi Logo" class="edu-logo">
+        <div class="edu-text">
+          <h3>MtsN 1 Kota Cimahi</h3>
+          <p>2017 - 2020</p>
         </div>
-        </div>
+      </div>
+    </div>
+  </section>    
+</div>
 
-        <div class="timeline-item left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-            <h3>SDN Cibeber Mandiri 1</h3>
-            <p>2011 - 2017</p>
-            </div>
-        </div>
-  </div>
-</section>
   
    <!-- Experience -->
-   <section class="experience">
+   <section class="experience" id="experience">
     <h2>Pengalaman</h2>
+    <p class="section-intro">
+      Saya percaya pengalaman adalah guru terbaik. Inilah beberapa kegiatan dan tanggung jawab yang pernah saya jalani.    </p>
     <div class="experience-grid">
         <div class="experience-card">
-            <h2>Politeknik Negeri Bandung</h2>
+            <h3><span>Politeknik Negeri Bandung</span></h3>
             <h3>Panitia Lapangan Fasilitator</h3>
             <p><i>PKKMB Swarnakala Polban 2025</i></p>
             <p>Agustus 2025</p>
@@ -109,7 +131,7 @@
         </div>
 
         <div class="experience-card">
-            <h2>SMKN 1 Cimahi</h2>
+            <h3><span>SMKN 1 Cimahi</span></h3>
             <h3>Staff IT (PKL)</h3>
             <p><i>PT Bandarudara Internasional Jawa Barat, Majalengka</i></p>
             <p>Juli - Desember 2023</p>
@@ -146,7 +168,7 @@
             <p>Mengelola data absensi dan penilaian anggota secara rutin dan terstruktur</p>
         </div>
         <div class="experience-card">
-            <h2>MTsN 1 Kota Cimahi</h2>
+            <h3><span>MTsN 1 Kota Cimahi</span></h3>
             <h3>Anggota</h3>
             <p><i>Palang Merah Remaja</i></p>
             <p>2017 - 2020</p>
@@ -158,94 +180,173 @@
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="skills">
-    <h2>Keterampilan</h2>
-    <div class="skills-grid">
-      <div class="skill-card">HTML & CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">C & Java</div>
-      <div class="skill-card">UI/UX Design (Figma)</div>
+<!-- Skills -->
+<section class="skills" id="skills">
+  <h2>Skills</h2>
+  <p class="section-intro">
+    Kumpulan keahlian yang saya pelajari dan kembangkan selama studi dan pengalaman organisasi.  </p>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h3>Programming</h3>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>C</li>
+      </ul>
     </div>
-  </section>
+
+    <div class="skill-category">
+      <h3>Networking</h3>
+      <ul>
+        <li>Dasar Jaringan Komputer</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Tools & Software</h3>
+      <ul>
+        <li>Canva</li>
+        <li>Figma</li>
+        <li>Git & GitHub</li>
+        <li>Oracle VirtualBox</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Kerja Sama</li>
+        <li>Kolaborasi</li>
+        <li>Komunikasi</li>
+        <li>Pemecahan Masalah</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  
 
   <!-- Projects -->
-  <section class="projects">
+  <section class="projects" id="projects">
     <h2>Proyek</h2>
+    <p class="section-intro">
+      Beberapa proyek yang mencerminkan perjalanan saya dalam belajar dan berkarya.    </p>
     <div class="projects-grid">
       <!-- Proyek 1 -->
       <div class="project-card">
-        <img src="assets/img/flappybird.png" alt="Game Flappy Bird">
+        <img src="assets/img/project1.jpg" alt="Game Flappy Bird">
         <h3>Game Flappy Bird</h3>
-        <p>Game sederhana yang dikembangkan dengan bahasa C dan library Raylib. 
-           Menampilkan fitur collision antara burung, pipa, dan tanah.</p>
-        <a href="https://github.com/zahraldila/flappybird" target="https://github.com/zahraldila/C2-FlappyBird.git">Lihat di GitHub</a>
+        <p>Flappy Bird adalah game sederhana berbasis C dengan library Raylib, di mana pemain mengendalikan burung untuk melewati pipa tanpa menabrak atau jatuh ke tanah. Game ini menampilkan implementasi collision detection sederhana sebagai dasar pembelajaran logika pemrograman dan grafik 2D.</p>
+        <a href="https://github.com/zahraldila/C2-FlappyBird.git" target="_blank">Lihat di GitHub</a>
       </div>
   
       <!-- Proyek 2 -->
       <div class="project-card">
-        <h3>UI Design Aplikasi Mindcare</h3>
         <div class="ui-preview">
-          <img src="assets/img/ui-home.png" alt="UI Home">
-          <img src="assets/img/ui-tracker.png" alt="UI Tracker">
-          <img src="assets/img/ui-content.png" alt="UI Content">
+          <img src="assets/img/ui1.png" alt="UI Home">
+          <img src="assets/img/ui2.png" alt="UI Tracker">
+          <img src="assets/img/ui3.png" alt="UI Content">
         </div>
-        <p>Desain aplikasi mobile untuk memantau suasana hati pengguna.</p>
+        <h3>UI Design Aplikasi Mindcare</h3>
+        <p>Prototipe aplikasi mobile berbasis Figma dengan fitur jurnal harian, pelacak emosi, simulasi konsultasi AI, dan konten edukasi kesehatan mental. Dirancang khusus untuk remaja agar mudah diakses, ramah pengguna, serta mendukung refleksi diri dan kesejahteraan mental.</p>
+        <a href="https://www.figma.com/proto/UOtloQxpjXwWuiaCoEug8J/MindCare-UI-Kelompok-6?node-id=15-2078&t=6qLwWksV9Gs89zhg-1" target="_blank">Lihat di Figma</a>
       </div>      
     </div>
   </section>  
 
-<!-- Contact -->
-<section class="contact">
-    <div class="kontak">
-      <h2>Kontak</h2>
-      <div class="kontak-container">
-        
-        <div class="kontak-item">
-          <img src="email-icon.png" alt="email" width="24">
-          <a href="mailto:zahra.aldila.tif24@polban.ac.id">zahra.aldila.tif24@polban.ac.id</a>
-        </div>
-  
-        <div class="kontak-item">
-          <img src="linkedin-icon.png" alt="linkedin" width="24">
-          <a href="https://www.linkedin.com/in/zahraaldila/">linkedin.com/zahraaldila</a>
-        </div>
-  
-        <div class="kontak-item">
-          <img src="github-icon.png" alt="github" width="24">
-          <a href="https://github.com/zahraldila">github.com/zahraldila</a>
-        </div>
-  
-      </div>
-    </div>      
-  </section>
-  
+  <!-- Sertifikasi -->
+<section class="certificate" id="certificate">
+  <h2>Sertifikasi</h2>
+  <p class="section-intro">
+    Sertifikasi ini menjadi bagian dari perjalanan saya dalam meningkatkan kemampuan dan pengetahuan.  </p>
+  <div class="certi-wrapper">
+    <img src="/assets/img/mtcna.jpg" alt="Sertifikat MTCNA">
+  </div>
+</section>
 
   <!-- Gallery -->
-  <section class="gallery">
-    <h2>Galeri Foto</h2>
+  <section class="gallery" id="gallery">
+    <h2>Moments</h2>
+    <p class="section-intro">
+      Dokumentasi yang merekam aktivitas dan pengalaman saya.    </p>
     <div class="gallery-grid">
       <figure>
-        <img src="assets/img/foto1.jpg" alt="Foto 1">
-        <figcaption>Presentasi Proyek Flappy Bird</figcaption>
+        <div class="img-container">
+          <img src="assets/img/wisuda.jpg" alt="Foto Protokoler Wisuda">
+        </div>
+        <figcaption>Protokoler Wisuda Polban 2025</figcaption>
       </figure>
+    
       <figure>
-        <img src="assets/img/foto2.jpg" alt="Foto 2">
-        <figcaption>UI Design Aplikasi Pemantau Emosi</figcaption>
+        <div class="img-container">
+          <img src="assets/img/upacara.jpg" alt="Foto Protokoler Upacara">
+        </div>
+        <figcaption>Protokoler Upacara Kemerdekaan 2025</figcaption>
       </figure>
+
       <figure>
-        <img src="assets/img/foto3.jpg" alt="Foto 3">
-        <figcaption>Dokumentasi Acara Himpunan</figcaption>
+        <div class="img-container">
+          <img src="assets/img/pkkmb.jpg" alt="Foto Fasilitator PKKMB">
+        </div>
+        <figcaption>Fasilitator PKKMB Swarnakala Polban 2025</figcaption>
+      </figure>
+
+      <figure>
+        <div class="img-container">
+          <img src="assets/img/ukmdays.jpg" alt="Foto Penampilan UKM Day">
+        </div>
+        <figcaption>Penampilan PSM di UKM Day 2025</figcaption>
       </figure>
     </div>
-
+    
   </section>
-  
-  
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="kontak">
+    <h2>Kontak</h2>
+    <p class="section-intro">
+      Tertarik berdiskusi atau berkolaborasi? Silakan hubungi saya melalui kontak berikut.    </p>
+    <div class="kontak-container">
+      
+      <div class="kontak-item">
+        <img src="/assets/img/email.png" alt="email" width="24">
+        <a href="mailto:zahra.aldila.tif24@polban.ac.id">zahra.aldila.tif24@polban.ac.id</a>
+      </div>
+
+      <div class="kontak-item">
+        <img src="assets/img/linkedin.png" alt="linkedin" width="24">
+        <a href="https://www.linkedin.com/in/zahraaldila/">zahraaldila</a>
+      </div>
+
+      <div class="kontak-item">
+        <img src="/assets/img/github.png" alt="github" width="24">
+        <a href="https://github.com/zahraldila">zahraldila</a>
+      </div>
+
+      <div class="kontak-item">
+        <img src="/assets/img/instagram.png" alt="github" width="24">
+        <a href="https://instagram.com/zahraldila">zahraldila</a>
+      </div>
+
+    </div>
+  </div>      
+</section>
+
+
 
   <footer>
     <p>© 2025 Zahra Aldila</p>
   </footer>
 
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+  
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+  </body>
+  
 </body>
 </html>

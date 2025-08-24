@@ -1,4 +1,4 @@
-/* ========== RESET ========== */
+/*  RESET  */
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ========== NAVBAR ========== */
+/*  NAVBAR  */
 .navbar {
   position: fixed;
   top: 0;
@@ -92,7 +92,7 @@ body {
   }
 }
 
-/* ========== HERO ========== */
+/*  HERO  */
 .hero {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #6c63ff, #ff6584);
@@ -126,7 +126,7 @@ body {
   }
 }
 
-/* ========== SECTIONS ========== */
+/*  SECTIONS  */
 section:not(.hero) {
   padding: 60px 20px;
   background: #fff;
@@ -150,7 +150,7 @@ section h2 {
   line-height: 1.6;
 }
 
-/* ========== ABOUT ========== */
+/*  ABOUT  */
 .about {
   max-width: 900px;
   margin: 0 auto;
@@ -163,18 +163,27 @@ section h2 {
   text-align: center;
 }
 
-/* ========== EDUCATION ========== */
-.education {
-  padding: 50px 20px;
+/*  EDUCATION  */
+#education {
+  padding: 60px 20px;
   background: #f9f9ff;
   text-align: center;
 }
 
-.education h2 {
-  margin-bottom: 40px;
+#education h2 {
+  margin-bottom: 20px;
   color: #6a5acd;
 }
 
+#education .section-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Timeline Container */
 .timeline {
   position: relative;
   max-width: 1000px;
@@ -185,14 +194,15 @@ section h2 {
 .timeline::before {
   content: '';
   position: absolute;
-  top: 220px;
-  bottom: 100px;
+  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 3px;
   background-color: #6c63ff;
 }
 
+/* Timeline Item */
 .timeline-item {
   display: flex;
   justify-content: flex-end;
@@ -206,8 +216,9 @@ section h2 {
   justify-content: flex-start;
 }
 
+/* Timeline Content (Card) */
 .timeline-content {
-  background: white;
+  background: #fff;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -216,8 +227,10 @@ section h2 {
   display: flex;
   align-items: center;
   gap: 15px;
+  text-align: left;
 }
 
+/* Logo & Text */
 .edu-logo {
   width: 50px;
   height: 50px;
@@ -225,19 +238,55 @@ section h2 {
   flex-shrink: 0;
 }
 
-.edu-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+.edu-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
 }
 
-.edu-text h3,
-.edu-text h5,
+.edu-text h5 {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 .edu-text p {
   margin: 2px 0;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-/* ========== EXPERIENCE ========== */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+    margin: 20px 0;
+    justify-content: flex-start;
+  }
+
+  .timeline-item.right {
+    margin-left: 0;
+  }
+
+  .timeline-content {
+    width: calc(100% - 50px);
+    margin-left: 40px;
+    flex-wrap: wrap;
+  }
+
+  .edu-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/*  EXPERIENCE  */
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -288,7 +337,7 @@ section h2 {
   line-height: 1.2rem;
 }
 
-/* ========== SKILLS ========== */
+/*  SKILLS  */
 .skills {
   padding: 50px 20px;
   text-align: center;
@@ -341,7 +390,7 @@ section h2 {
   font-size: 0.9em;
 }
 
-/* ========== PROJECTS ========== */
+/*  PROJECTS  */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -382,7 +431,7 @@ section h2 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* ========== GALLERY ========== */
+/*  GALLERY  */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -418,7 +467,7 @@ section h2 {
   border-top: 1px solid #eee;
 }
 
-/* ========== CERTIFICATE ========== */
+/*  CERTIFICATE  */
 .certificate {
   padding: 50px 20px;
   text-align: center;
@@ -447,7 +496,7 @@ section h2 {
   border-radius: 10px;
 }
 
-/* ========== CONTACT ========== */
+/*  CONTACT  */
 .contact {
   padding: 50px 20px;
   text-align: center;
@@ -500,7 +549,7 @@ section h2 {
   }
 }
 
-/* ========== FOOTER ========== */
+/*  FOOTER  */
 footer {
   background: #6c63ff;
   color: #fff;
